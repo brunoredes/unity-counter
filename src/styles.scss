@@ -6,3 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  @apply bg-orange-ink-100;
+  @apply text-white-ink;
+}

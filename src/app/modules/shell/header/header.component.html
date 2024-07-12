@@ -1,3 +1,10 @@
-<header>
-    
-</header>
+<header class="bg-orange-ink-100">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
+      <a class="block text-white-ink" [routerLink]="['/']">
+        <span class="sr-only">Home</span>
+        <img ngSrc="/images/logo.png" alt="logo Teamfight Tactics branco" width="90" height="90">
+      </a>
+  
+      <ng-content></ng-content>
+    </div>
+  </header>

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { CounterComponent } from './counter/counter.component';
+import { CharacterComponent } from './character/character.component';
 
 export const COUNTER_ROUTES: Routes = [
-  { path: '', component: CounterComponent },
+  { path: '', component: CharacterComponent },
 ];

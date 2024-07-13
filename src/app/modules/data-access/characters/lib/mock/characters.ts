@@ -202,6 +202,113 @@ export const charactersByCost: Unity = {
       photo: '/images/cost-three/zoe.png',
     },
   ],
-  4: [],
-  5: [],
+  4: [
+    {
+      name: 'Annie',
+      traits: ['Fortune', 'Invoker'],
+      photo: '/images/cost-four/annie.png',
+    },
+    {
+      name: 'Ashe',
+      traits: ['Porcelain', 'Sniper'],
+      photo: '/images/cost-four/ashe.png',
+    },
+    {
+      name: 'Galio',
+      traits: ['Storyweaver', 'Bruiser'],
+      photo: '/images/cost-four/galio.png',
+    },
+    {
+      name: 'Kaisa',
+      traits: ['Inkshadow', 'Trickshot'],
+      photo: '/images/cost-four/kaisa.png',
+    },
+    {
+      name: 'Kayn',
+      traits: ['Ghostly', 'Reaper'],
+      photo: '/images/cost-four/kayn.png',
+    },
+    {
+      name: 'Lee Sin',
+      traits: ['Dragonlord', 'Duelist'],
+      photo: '/images/cost-four/leesin.png',
+    },
+    {
+      name: 'Lillia',
+      traits: ['Mythic', 'Invoker'],
+      photo: '/images/cost-four/lillia.png',
+    },
+    {
+      name: 'Morgana',
+      traits: ['Ghostly', 'Sage'],
+      photo: '/images/cost-four/morgana.png',
+    },
+    {
+      name: 'Nautilus',
+      traits: ['Mythic', 'Warden'],
+      photo: '/images/cost-four/nautilus.png',
+    },
+    {
+      name: 'Ornn',
+      traits: ['Dryad', 'Behemoth'],
+      photo: '/images/cost-four/ornn.png',
+    },
+    {
+      name: 'Sylas',
+      traits: ['Umbral', 'Bruiser'],
+      photo: '/images/cost-four/sylas.png',
+    },
+    {
+      name: 'Syndra',
+      traits: ['Fated', 'Arcanist'],
+      photo: '/images/cost-four/sylas.png',
+    },
+  ],
+  5: [
+    {
+      name: 'Azir',
+      traits: ['Dryad', 'Invoker'],
+      photo: '/images/cost-five/azir.png',
+    },
+    {
+      name: 'Hwei',
+      traits: ['Mythic', 'Artist'],
+      photo: '/images/cost-five/hwei.png',
+    },
+    {
+      name: 'Irelia',
+      traits: ['Storyweaver', 'Duelist'],
+      photo: '/images/cost-five/irelia.png',
+    },
+    {
+      name: 'Lissandra',
+      traits: ['Porcelain', 'Arcanist'],
+      photo: '/images/cost-five/irelia.png',
+    },
+    {
+      name: 'Rakan',
+      traits: ['Dragonlord', 'Lovers', 'Altruist'],
+      photo: '/images/cost-five/rakan.png',
+    },
+    {
+      name: 'Sett',
+      traits: ['Fated', 'Umbral', 'Warden'],
+      photo: '/images/cost-five/sett.png',
+    },
+    {
+      name: 'Udyr',
+      traits: ['Inkshadow', 'Behemoth', 'Spirit Walker'],
+      photo: '/images/cost-five/udyr.png',
+    },
+    {
+      name: 'Wukong',
+      traits: ['Heavenly', 'Great', 'Sage'],
+      photo: '/images/cost-five/wukong.png',
+    },
+    {
+      name: 'Xayah',
+      traits: ['Dragonlord', 'Lovers', 'Trickshot'],
+      photo: '/images/cost-five/xayah.png',
+    },
+  ],
 };

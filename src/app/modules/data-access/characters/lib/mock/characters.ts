@@ -135,7 +135,73 @@ export const charactersByCost: Unity = {
       photo: '/images/cost-two/zyra.png',
     },
   ],
-  3: [],
+  3: [
+    {
+      name: 'Alune',
+      traits: ['Umbral', 'Invoker'],
+      photo: '/images/cost-three/alune.png',
+    },
+    {
+      name: 'Amumu',
+      traits: ['Porcelain', 'Warden'],
+      photo: '/images/cost-three/amumu.png',
+    },
+    {
+      name: 'Aphelios',
+      traits: ['Fated', 'Sniper'],
+      photo: '/images/cost-three/aphelios.png',
+    },
+    {
+      name: 'Bard',
+      traits: ['Mythic', 'Trickshot'],
+      photo: '/images/cost-three/bard.png',
+    },
+    {
+      name: 'Diana',
+      traits: ['Dragonlord', 'Sage'],
+      photo: '/images/cost-three/diana.png',
+    },
+    {
+      name: 'Illaoi',
+      traits: ['Ghostly', 'Warden'],
+      photo: '/images/cost-three/illaoi.png',
+    },
+    {
+      name: 'Soraka',
+      traits: ['Heavenly', 'Altruist'],
+      photo: '/images/cost-three/soraka.png',
+    },
+    {
+      name: 'Tahm Kench',
+      traits: ['Ghostly', 'Warden'],
+      photo: '/images/cost-three/tahmkench.png',
+    },
+    {
+      name: 'Thresh',
+      traits: ['Fated', 'Behemoth'],
+      photo: '/images/cost-three/thresh.png',
+    },
+    {
+      name: 'Tristana',
+      traits: ['Fortune', 'Duelist'],
+      photo: '/images/cost-three/tristana.png',
+    },
+    {
+      name: 'Volibear',
+      traits: ['Inkshadow', 'Duelist'],
+      photo: '/images/cost-three/volibear.png',
+    },
+    {
+      name: 'Yone',
+      traits: ['Umbral', 'Reaper'],
+      photo: '/images/cost-three/yone.png',
+    },
+    {
+      name: 'Zoe',
+      traits: ['Storyweaver', 'Fortune', 'Arcanist'],
+      photo: '/images/cost-three/zoe.png',
+    },
+  ],
   4: [],
   5: [],
 };

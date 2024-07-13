@@ -4,12 +4,12 @@
     @for (cost of costs; track $index) {
     <h2>Custo {{ cost }}</h2>
     <div class="grid grid-card md:sm:gap-2 gap-5">
-      @for (character of characters[cost]; track $index) {
-      <app-card [character]="character" />
+      @for (character of characters[cost]; track $index) { @defer {
 
-      }
+      <app-card [character]="character" />
+      } }
     </div>
-    <hr class="mt-2"/>
+    <hr class="mt-2" />
     }
   </section>
 </main>

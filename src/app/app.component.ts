@@ -3,11 +3,19 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './modules/shell/footer/footer.component';
 import { HeaderComponent } from './modules/shell/header/header.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { XlsComponent } from './modules/feature/export/xls/xls.component';
+import { CsvComponent } from './modules/feature/export/csv/csv.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, HeaderComponent],
+  imports: [
+    RouterOutlet,
+    FooterComponent,
+    HeaderComponent,
+    XlsComponent,
+    CsvComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -20,14 +28,19 @@ export class AppComponent {
     this.meta.addTags([
       {
         name: 'description',
-        content: 'Unity counter is a system for counting TFT unities for analytics purpose',
+        content:
+          'Unity counter is a system for counting TFT unities for analytics purpose',
       },
       { name: 'author', content: 'Bruno Donatelli' },
-      { name: 'keywords', content: 'TFT, Teamfight Tactics, Teamfighttactics, tft' },
+      {
+        name: 'keywords',
+        content: 'TFT, Teamfight Tactics, Teamfighttactics, tft',
+      },
       { property: 'og:title', content: 'Unity Counter' },
       {
         property: 'og:description',
-        content: 'Unity counter is a system for counting TFT unities for analytics purpose',
+        content:
+          'Unity counter is a system for counting TFT unities for analytics purpose',
       },
       { property: 'og:image', content: '/images/logo.png' },
       { property: 'og:url', content: 'https://unity-counter.vercel.app/home' },
@@ -35,7 +48,8 @@ export class AppComponent {
       { name: 'twitter:title', content: 'Unity Counter' },
       {
         name: 'twitter:description',
-        content: 'Unity counter is a system for counting TFT unities for analytics purpose',
+        content:
+          'Unity counter is a system for counting TFT unities for analytics purpose',
       },
       { name: 'twitter:image', content: '/images/logo.png' },
     ]);

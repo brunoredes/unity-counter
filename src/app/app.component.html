@@ -1,20 +1,12 @@
 <app-header>
-  <div class="flex flex-1 items-center justify-end md:justify-between">
+  <div class="flex flex-1 items-center justify-end">
     <div class="flex items-end gap-4">
       <div class="sm:flex sm:gap-4">
-        <button
-          class="block rounded-md bg-red-ink px-5 py-2.5 text-sm font-medium text-white-ink transition hover:bg-red-800"
-          href="#"
-        >
-          Exportar para Excel
-        </button>
+        @defer {
+        <app-xls />
 
-        <a
-          class="hidden rounded-md bg-white-ink px-5 py-2.5 text-sm font-medium text-red-ink transition hover:text-teal-600/75 sm:block"
-          href="#"
-        >
-          Exportar como CSV
-        </a>
+        <app-csv />
+        }
       </div>
     </div>
   </div>

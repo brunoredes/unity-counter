@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { XlsxService } from '../../../data-access/export/lib/xlsx/xlsx.service';
 import { CostService } from '../../../data-access/characters/lib/cost/cost.service';
 import { Character } from '../../../data-access/characters/models/unity';
@@ -9,6 +9,7 @@ import { Character } from '../../../data-access/characters/models/unity';
   imports: [],
   templateUrl: './xls.component.html',
   styleUrl: './xls.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class XlsComponent {
   private readonly xlsxService: XlsxService = inject(XlsxService);

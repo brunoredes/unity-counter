@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './modules/shell/footer/footer.component';
 import { HeaderComponent } from './modules/shell/header/header.component';
@@ -18,6 +18,7 @@ import { CsvComponent } from './modules/feature/export/csv/csv.component';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   private readonly titleService: Title = inject(Title);

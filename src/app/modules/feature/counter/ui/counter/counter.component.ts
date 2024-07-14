@@ -1,4 +1,11 @@
-import { Component, inject, Input, input, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  Input,
+  input,
+  signal,
+} from '@angular/core';
 import { Character } from '../../../../data-access/characters/models/unity';
 import { CostService } from '../../../../data-access/characters/lib/cost/cost.service';
 
@@ -8,11 +15,12 @@ import { CostService } from '../../../../data-access/characters/lib/cost/cost.se
   imports: [],
   templateUrl: './counter.component.html',
   styleUrl: './counter.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CounterComponent {
   private readonly costService: CostService = inject(CostService);
 
-  @Input({ required: true }) public cost = 0;
+  @Input({ required: true }) public cost = 1;
   @Input({ required: true }) public character!: Character;
 
   public increment() {

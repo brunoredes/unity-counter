@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, Input, input, signal } from '@angular/core';
+import { Character } from '../../../../data-access/characters/models/unity';
+import { CostService } from '../../../../data-access/characters/lib/cost/cost.service';
 
 @Component({
   selector: 'app-counter',
@@ -8,15 +10,19 @@ import { Component, signal } from '@angular/core';
   styleUrl: './counter.component.scss',
 })
 export class CounterComponent {
-  public counter = signal(0);
+  private readonly costService: CostService = inject(CostService);
+
+  @Input({ required: true }) public cost = 0;
+  @Input({ required: true }) public character!: Character;
 
   public increment() {
-    this.counter.update((value) => value + 1);
+    this.character.timesBought++;
+    this.costService.updateCharacter(this.cost, this.character);
   }
   public decrease() {
-    if (this.counter() <= 0) {
-      return;
+    if (this.character.timesBought > 0) {
+      this.character.timesBought -= 1;
+      this.costService.updateCharacter(this.cost, this.character);
     }
-    this.counter.update((value) => value - 1);
   }
 }

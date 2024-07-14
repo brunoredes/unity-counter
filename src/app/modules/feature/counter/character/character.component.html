@@ -6,7 +6,9 @@
     <div class="grid grid-card md:sm:gap-2 gap-5">
       @for (character of characters[cost]; track $index) { @defer {
 
-      <app-card [character]="character" />
+      <app-card [character]="character">
+        <app-counter [character]="character" [cost]="cost" />
+      </app-card>
       } }
     </div>
     <hr class="mt-2" />

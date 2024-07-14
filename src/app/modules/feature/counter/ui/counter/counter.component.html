@@ -1,5 +1,4 @@
-@let counterSignal = counter();
-<div class="flex justify-around">
+<div class="flex justify-around items-center">
   <button
     type="button"
     (click)="increment()"
@@ -10,15 +9,17 @@
     +
   </button>
   <span aria-atomic="true" aria-live="assertive" aria-relevant="additions"
-    >{{ counter() }} unidade{{ counterSignal > 1 ? "s" : "" }}</span
+    >{{ character.timesBought }} unidade{{
+      character.timesBought > 1 ? "s" : ""
+    }}</span
   >
   <button
     type="button"
     (click)="decrease()"
     aria-label="Diminuir contagem em + 1"
     aria-details="Este botão diminui a contagem de 1 em 1. O botão fica desabilitado quando o valor do contador é menor que zero"
-    [disabled]="counterSignal < 1"
-    [attr.aria-disabled]="counterSignal < 1"
+    [disabled]="character.timesBought < 1"
+    [attr.aria-disabled]="character.timesBought < 1"
     class="font-bold text-xl bg-red-ink text-white-ink rounded-full w-10 h-10 disabled:bg-slate-300 hover:bg-red-500"
     data-button="decrease"
   >

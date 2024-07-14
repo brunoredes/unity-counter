@@ -1,3 +1,3 @@
 export interface Export {
-  export(): void;
+  export(data: any[], fileName: string): void;
 }

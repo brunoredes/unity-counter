@@ -3,11 +3,12 @@ import { Component, inject } from '@angular/core';
 import { CostService } from '../../../data-access/characters/lib/cost/cost.service';
 import { Character } from '../../../data-access/characters/models/unity';
 import { CardComponent } from '../ui/card/card.component';
+import { CounterComponent } from '../ui/counter/counter.component';
 
 @Component({
   selector: 'app-character',
   standalone: true,
-  imports: [NgClass, CardComponent],
+  imports: [NgClass, CardComponent, CounterComponent],
   templateUrl: './character.component.html',
   styleUrl: './character.component.scss',
 })
@@ -22,4 +23,10 @@ export class CharacterComponent {
       this.characters[cost] = this.costService.getCharactersByCost(cost);
     });
   }
+
+  increaseCounter() {
+    this.counter++;
+  }
+
+  decreaseCounter() {}
 }

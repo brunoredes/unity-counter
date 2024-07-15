@@ -18,4 +18,11 @@ export const routes: Routes = [
         (r) => r.TIMER_ROUTES
       ),
   },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./modules/shell/not-found/not-found/not-found.component').then(
+        (c) => c.NotFoundComponent
+      ),
+  },
 ];

@@ -1,0 +1,23 @@
+<!--
+    Graphic from https://www.opendoodles.com/
+-->
+
+<main class="grid h-screen place-content-center bg-red-ink px-4">
+  <section class="flex flex-col justify-center items-center">
+    <img [ngSrc]="setNotFoundImage()" width="140" height="140" loading="lazy" />
+
+    <h1
+      class="mt-6 text-2xl font-bold tracking-tight text-white-ink sm:text-4xl"
+    >
+      Opssss
+    </h1>
+
+    <p class="mt-4 text-orange-ink-100 font-medium">Não encontramos essa página 😭</p>
+    <a
+      routerLink="/"
+      class="mt-6 inline-block rounded border-orange-ink-100 bg-orange-ink px-5 py-3 text-sm font-medium text-white hover:bg-white-ink hover:text-orange-ink focus:ring"
+    >
+      Voltar à pagina inicial
+    </a>
+  </section>
+</main>

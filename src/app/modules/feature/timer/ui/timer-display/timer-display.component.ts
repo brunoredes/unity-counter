@@ -10,5 +10,5 @@ import { Timer } from '../../../../data-access/timer/lib/waiting-room/waiting-ro
 })
 export class TimerDisplayComponent {
   public timer = input.required<Timer>({ alias: 'timer' });
-  protected readonly eventDate = '2024-07-30';
+  protected readonly eventDate = '2024-07-17';
 }

@@ -7,6 +7,7 @@ import {
   ProcessTimer,
   Timer,
 } from './waiting-room';
+import { eventDate } from '../../../../../utils/date';
 
 @Injectable({
   providedIn: 'root',
@@ -23,7 +24,7 @@ export class WaitingRoomService
   readonly #ONE_MINUTE_IN_SECONDS = 60;
   readonly #ONE_HOUR_IN_MINUTES = 60;
   readonly #HOURS_IN_ONE_DAY = 24;
-  readonly #eventDate = 'July 17, 2024 06:00:00';
+  readonly #eventDate = eventDate;
 
   processTimer(): WritableSignal<Timer> {
     const future = Date.parse(this.#eventDate);

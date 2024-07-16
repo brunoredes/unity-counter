@@ -1,6 +1,7 @@
 import { isEqual } from 'date-fns';
+import { eventDate } from './date';
 
 export function openingDate() {
-  const baseDate = Date.parse('July 17, 2024 06:00:00');
+  const baseDate = Date.parse(eventDate);
   return isEqual(baseDate, Date.now());
 }

@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
+import { CsvComponent } from './modules/feature/export/csv/csv.component';
+import { XlsComponent } from './modules/feature/export/xls/xls.component';
 import { FooterComponent } from './modules/shell/footer/footer.component';
 import { HeaderComponent } from './modules/shell/header/header.component';
-import { Meta, Title } from '@angular/platform-browser';
-import { XlsComponent } from './modules/feature/export/xls/xls.component';
-import { CsvComponent } from './modules/feature/export/csv/csv.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,7 @@ import { CsvComponent } from './modules/feature/export/csv/csv.component';
     HeaderComponent,
     XlsComponent,
     CsvComponent,
+    // AnnouncementComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -23,6 +24,8 @@ import { CsvComponent } from './modules/feature/export/csv/csv.component';
 export class AppComponent {
   private readonly titleService: Title = inject(Title);
   private readonly meta: Meta = inject(Meta);
+
+
   constructor() {
     this.titleService.setTitle('Unity Counter');
 

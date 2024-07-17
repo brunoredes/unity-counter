@@ -2,12 +2,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   inject,
-  Input,
-  input,
-  signal,
+  Input
 } from '@angular/core';
-import { Character } from '../../../../data-access/characters/models/unity';
 import { CostService } from '../../../../data-access/characters/lib/cost/cost.service';
+import { Character } from '../../../../data-access/characters/models/unity';
 
 @Component({
   selector: 'app-counter',

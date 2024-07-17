@@ -1,5 +1,5 @@
 @let unity = character();
-<div class="max-w-sm rounded-lg shadow dark:bg-orange-ink">
+<div class="max-w-sm rounded-lg shadow dark:bg-magic-purple-base">
   <div class="flex justify-center">
     <img
       class="rounded-t-lg p-2"
@@ -12,12 +12,10 @@
     />
   </div>
   <div class="p-4">
-    <h3
-      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-    >
+    <h3 class="mb-2 text-2xl font-bold tracking-tight text-magic-white">
       {{ unity.name }}
     </h3>
-    <p class="mb-3 font-normal text-red-ink">
+    <p class="mb-3 font-medium text-magic-purple-100">
       {{ unity.traits | traitsSeparator }}
     </p>
     <ng-content></ng-content>

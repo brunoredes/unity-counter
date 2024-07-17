@@ -1,1 +1,1 @@
-export const eventDate = 'July 17, 2024 16:00:00' as const;
+export const eventDate = '2024-07-16T16:00:00' as const;

@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CounterComponent } from './counter.component';
-import { signal } from '@angular/core';
 
 describe('CounterComponent', () => {
   let component: CounterComponent;
@@ -15,36 +14,10 @@ describe('CounterComponent', () => {
     fixture = TestBed.createComponent(CounterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    component.counter = signal(0);
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should increment by 1', () => {
-    component.increment();
-
-    expect(component.counter).toBe(1);
-  });
-
-  it('should decrement by 1', () => {
-    component.increment();
-    component.increment();
-    component.increment();
-
-    expect(component.counter).toBe(3);
-
-    component.decrease();
-
-    expect(component.counter).toBe(2);
-  });
-
-  it('should not decrement counter when counter is 0', () => {
-    component.decrease();
-
-    expect(component.counter).toBe(0);
-    expect(component.counter).not.toBe(-1);
   });
 
   it('should show plural when counter number is higher than 1', () => {

@@ -19,7 +19,7 @@ export enum Class {
     BATQUEEN = 'Bat Queen',
     BLASTER = 'Blaster',
     INCANTOR = 'Incantor',
-    MULTISTRICKER = 'Multistriker',
+    MULTISTRIKER = 'Multistriker',
     SCHOLAR = 'Scholar',
     VANGUARD = 'Vanguard',
     BASTION = 'Bastion',

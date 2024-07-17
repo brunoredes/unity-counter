@@ -2,7 +2,7 @@
     Graphic from https://www.opendoodles.com/
 -->
 
-<main class="grid h-screen place-content-center bg-red-ink px-4">
+<main class="grid h-screen place-content-center bg-transparent px-4">
   <section class="flex flex-col justify-center items-center">
     <img [ngSrc]="setNotFoundImage()" width="140" height="140" loading="lazy" />
 
@@ -12,10 +12,12 @@
       Opssss
     </h1>
 
-    <p class="mt-4 text-orange-ink-100 font-medium">Não encontramos essa página 😭</p>
+    <p class="mt-4 text-magic-purple-100 font-medium">
+      Não encontramos essa página 😭
+    </p>
     <a
       routerLink="/"
-      class="mt-6 inline-block rounded border-orange-ink-100 bg-orange-ink px-5 py-3 text-sm font-medium text-white hover:bg-white-ink hover:text-orange-ink focus:ring"
+      class="mt-6 inline-block rounded bg-magic-purple-base px-5 py-3 text-sm font-medium text-magic-white hover:bg-white-ink hover:bg-magic-purple-100 hover:text-magic-purple-900 transition focus:ring"
     >
       Voltar à pagina inicial
     </a>

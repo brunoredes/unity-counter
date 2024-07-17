@@ -8,6 +8,5 @@
 }
 
 body {
-  background: linear-gradient(to right, #8157d2, #5971c7) 0% 0% / 100% 50%,
-    linear-gradient(to right, #bd7ddb, #756dde) 0% 50% / 100% 50%;
+  @apply bg-magic-purple-900;
 }

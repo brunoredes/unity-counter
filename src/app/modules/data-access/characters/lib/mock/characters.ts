@@ -6,19 +6,19 @@ export const charactersByCost: Unity = {
     {
       name: 'Ashe',
       traits: [Origin.ELDRITCH, Class.MULTISTRIKER],
-      photo: '/images/cost-one/ashe.png',
+      photo: '/CnR_lScuHqIfb1YNfB4Vjw/84b71795-04af-4f26-ab25-522fb3832300/default',
       timesBought: 0,
     },
     {
       name: 'Blitzcrank',
       traits: [Origin.HONEYMANCY, Class.VANGUARD],
-      photo: '/images/cost-one/blitzcrank.png',
+      photo: '/CnR_lScuHqIfb1YNfB4Vjw/638fd8ae-efa7-499c-6c2d-74fcb882dd00/default',
       timesBought: 0,
     },
     {
       name: 'Elise',
       traits: [Origin.ELDRITCH, Class.SHAPESHIFTER],
-      photo: '/images/cost-one/elise.png',
+      photo: '/CnR_lScuHqIfb1YNfB4Vjw/90b0f113-e5a9-46c8-d685-f0446cb6d000/default',
       timesBought: 0,
     },
     {

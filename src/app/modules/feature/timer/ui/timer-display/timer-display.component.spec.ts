@@ -8,12 +8,17 @@ describe('TimerDisplayComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TimerDisplayComponent]
-    })
-    .compileComponents();
+      imports: [TimerDisplayComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TimerDisplayComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('timer', {
+      days: 2,
+      hours: 20,
+      minutes: 16,
+      seconds: 33,
+    });
     fixture.detectChanges();
   });
 

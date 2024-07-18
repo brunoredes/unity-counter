@@ -12,5 +12,5 @@ import { TraitsSeparatorPipe } from '../../pipes/traits-separator.pipe';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent {
-  public character = input.required<Character>();
+  public character = input.required<Character>({ alias: 'character' });
 }

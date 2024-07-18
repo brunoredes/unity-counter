@@ -21,4 +21,25 @@ describe('CounterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have images', () => {
+    const el = fixture.debugElement.nativeElement;
+    const cards = el.querySelectorAll('img');
+
+    expect(cards).toBeTruthy();
+  });
+
+  it('should have counter', () => {
+    const el = fixture.debugElement.nativeElement;
+    const counter = el.querySelectorAll('app-counter');
+
+    expect(counter).toBeTruthy();
+  });
+
+  it('should have title', () => {
+    const el = fixture.debugElement.nativeElement;
+    const h1 = el.querySelectorAll('h1') as HTMLHeadingElement;
+
+    expect(h1).toBeTruthy();
+  })
 });

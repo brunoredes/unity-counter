@@ -2,7 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   inject,
-  Input
+  Input,
 } from '@angular/core';
 import { CostService } from '../../../../data-access/characters/lib/cost/cost.service';
 import { Character } from '../../../../data-access/characters/models/unity';
@@ -18,8 +18,8 @@ import { Character } from '../../../../data-access/characters/models/unity';
 export class CounterComponent {
   private readonly costService: CostService = inject(CostService);
 
-  @Input({ required: true }) public cost = 1;
-  @Input({ required: true }) public character!: Character;
+  @Input({ required: true, alias: 'cost' }) public cost = 1;
+  @Input({ required: true, alias: 'character' }) public character!: Character;
 
   public increment() {
     this.character.timesBought++;

@@ -11,9 +11,14 @@ import { PickRandomImageService } from '../../../data-access/image/lib/pick-rand
   styleUrl: './not-found.component.scss',
 })
 export class NotFoundComponent {
+  public notFoundImage: string = '';
   private readonly pickRandomImageService: PickRandomImageService = inject(
     PickRandomImageService
   );
+
+  constructor() {
+    this.notFoundImage = this.setNotFoundImage();
+  }
 
   setNotFoundImage() {
     return this.pickRandomImageService.getRandomImage();

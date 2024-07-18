@@ -25,7 +25,6 @@ export class AppComponent {
   private readonly titleService: Title = inject(Title);
   private readonly meta: Meta = inject(Meta);
 
-
   constructor() {
     this.titleService.setTitle('Unity Counter');
 

@@ -8,22 +8,21 @@ import { Export } from '../contract/export';
   providedIn: 'root',
 })
 export class XlsxService implements Export {
+  private worker!: Worker;
   constructor() {}
 
   public export(charactersByCost: Unity, fileName: string) {
-    const workbook = new Workbook();
-    const worksheet = workbook.addWorksheet('Sheet 1');
-    worksheet.addRow(['Unity', 'Times bought']);
+    if (!this.worker) {
+      this.worker = new Worker(new URL('./xlsx.worker', import.meta.url));
+    }
+    this.worker.postMessage({ charactersByCost, fileName });
 
-    Object.keys(charactersByCost).forEach((cost) => {
-      charactersByCost[parseInt(cost, 10)].forEach((character) => {
-        worksheet.addRow([character.name, character.timesBought]);
-      });
-    });
-    console.log(charactersByCost);
-    workbook.xlsx.writeBuffer().then((buffer) => {
-      this.generateBlob(buffer, fileName);
-    });
+    const handleMessage = ({ data }: MessageEvent) => {
+      this.generateBlob(data.buffer, data.fileName);
+      this.worker.removeEventListener('message', handleMessage);
+    };
+
+    this.worker.addEventListener('message', handleMessage);
   }
 
   private generateBlob(buffer: Buffer, fileName: string) {

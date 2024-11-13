@@ -14,6 +14,11 @@ module.exports = {
         "magic-purple-500": "#756DDE",
         "magic-purple-700": "#8157D2",
         "magic-purple-900": "#202057",
+        "blue-caitlyn-hair": "#292347",
+        "blue-jinx": "#1b6fa5",
+        "vi-pink": "#cd4860",
+        "golden-cait": "#dbb769",
+        "golden-senna": "#f3e579"
       },
       backgroundImage: {
         "top-gradient":
@@ -28,6 +33,11 @@ module.exports = {
         "magic-purple-500": "#756DDE",
         "magic-purple-700": "#8157D2",
         "magic-purple-900": "#202057",
+        "blue-caitlyn-hair": "#292347",
+        "blue-jinx": "#1b6fa5",
+        "vi-pink": "#cd4860",
+        "golden-cait": "#dbb769",
+        "golden-senna": "#f3e579"
       },
       textColor: {
         "red-ink": "#AE1E44",
@@ -35,6 +45,11 @@ module.exports = {
         "orange-ink": "#FF6807",
         "orange-ink-100": "#E49D4E",
         "magic-purple-base": "#3C31A7",
+        "blue-caitlyn-hair": "#292347",
+        "blue-jinx": "#1b6fa5",
+        "vi-pink": "#cd4860",
+        "golden-cait": "#dbb769",
+        "golden-senna": "#f3e579"
       },
       borderColor: {
         "red-ink": "#AE1E44",
@@ -43,6 +58,11 @@ module.exports = {
         "orange-ink-100": "#E49D4E",
         "magic-purple-base": "#3C31A7",
         "magic-purple-900": "#202057",
+        "blue-caitlyn-hair": "#292347",
+        "blue-jinx": "#1b6fa5",
+        "vi-pink": "#cd4860",
+        "golden-cait": "#dbb769",
+        "golden-senna": "#f3e579"
       },
     },
   },

@@ -1,10 +1,10 @@
 <main>
   <section class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
-    <h1 class="font-bold tracking-wide text-3xl text-magic-white">
+    <h1 class="font-bold tracking-wide text-3xl text-golden-cait">
       Contador de peças
     </h1>
     @for (cost of costs; track $index) {
-    <h2 class="font-medium text-magic-white text-lg">Custo {{ cost }}</h2>
+    <h2 class="font-medium text-golden-cait text-2xl mt-3 mb-1">Custo {{ cost }}</h2>
     <div class="grid grid-card md:sm:gap-2 gap-5">
       @for (character of characters[cost]; track $index) { @defer {
 
@@ -13,7 +13,7 @@
       </app-card>
       } }
     </div>
-    <hr class="mt-2" />
+    <hr class="mt-2 border-t-golden-cait" />
     }
   </section>
 </main>

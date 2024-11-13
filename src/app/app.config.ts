@@ -1,20 +1,16 @@
 import {
   ApplicationConfig,
-  provideExperimentalZonelessChangeDetection, isDevMode
+  provideExperimentalZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
+import { IMAGE_CONFIG } from '@angular/common';
 import { routes } from './app.routes';
-import { provideCloudflareLoader } from '@angular/common';
-import { provideServiceWorker } from '@angular/service-worker';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideExperimentalZonelessChangeDetection(),
     provideRouter(routes),
-    provideCloudflareLoader('https://imagedelivery.net'), provideServiceWorker('ngsw-worker.js', {
-            enabled: !isDevMode(),
-            registrationStrategy: 'registerWhenStable:30000'
-          })
+    { provide: IMAGE_CONFIG, useValue: { placeholderResolution: 120 } },
   ],
 };
